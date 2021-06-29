@@ -1,38 +1,41 @@
-# Make It Rain - Presentatie
+# Make It Rain - Overzichtspagina
 
-Deze website wordt een overzicht van alle projecten die zijn gemaakt bij Make it Rain.
-
-Elk project maakt een eigen HTML pagina (of meerdere pagina's) waarop het project wordt gepresenteerd.
+In deze repository gaan we samenwerken aan een totaaloverzicht van alle Make it Rain projecten. Als iedereen zijn pagina af heeft genereren we met een script een overzichtspagina
 
 ## Werkwijze
 
-1. Clone de repository naar je computer.
-2. Maak voor je project een eigen folder aan, in deze folder ga je werken
-3. Maak een index.html OF index.php aan (als je PHP wilt gebruiken)
-4. Schrijf de code voor de pagina. Maak subfolders voor afbeeldingen, css etc. 
+Elk team of project maakt een HTML pagina (of meerdere pagina's) waarmee je het project presenteert.
 
-### Belangrijk: 
-- Zet in de `<title>` tag de naam van je project, bijvoorbeeld `<title>Mijn project</title>`.
-- Zet in de folder een afbeelding `thumb.jpg` met het formaat 400x300 pixels.
+1. Clone eerst deze repository naar je computer.
+2. Maak voor het project een nieuwe folder aan met een korte naam
+3. Je werkt alleen in die folder
+4. Maak een `index.html` OF `index.php` aan (als je PHP wilt gebruiken)
+5. Schrijf de code voor de pagina. Je mag subfolders maken voor afbeeldingen, css etc. 
+6. Bekijk de map `voorbeeld` om een voorbeeld te zien ;-)
 
-*Een script gaat alle folders langs, leest alle `<title>` tags en thumbnails en genereert een overzichtspagina: `index.html`
+### Belangrijk
+
+- Zet in de `<title>` tag van de `index.html` de naam van het project, bijvoorbeeld `<title>Mijn project</title>`.
+- Zet in de folder een afbeelding met de naam `thumb.jpg` en de afmeting: 400x300 pixels.
 
 ### Code & skills
-Zorg dat je gebruik maakt van wat je hebt geleerd in de afgelopen modules
+Laat zien en gebruik wat je hebt geleerd in de afgelopen periodes.
 
 - CSS Grid
-- Responsive / Media queries
+- Responsive layout / Media queries
 - Javascript
 
 ### Werkverdeling
+
 - Verdeel de werkzaamheden onder de teamleden
-- Zo werk je niet allemaal in zelfde bestand
-- Maak desnoods eerst losse bestanden en voeg deze later smane tot één HTML bestand?
+- Zo werk je niet allemaal in hetzelfde bestand
+- Je kunt ook een paar losses pagina's maken, als er in ieder geval maar een `index.html` is.
 
-### Inhoud
-Denk aan de poster die je hebt gemaakt (pak deze erbij)
+### Wat zet je op de projectpagina?
 
-- Titel en omschrijving
+*Denk aan de poster die je hebt gemaakt (pak deze erbij!)*
+
+- Titel en omschrijving project
 - Doelgroep
 - Teamleden
 - Wireframes / Design schetsen
@@ -42,7 +45,10 @@ Denk aan de poster die je hebt gemaakt (pak deze erbij)
 - Video's (liefst een embed van Youtube, geen grote video bestanden in Github aub)
 
 ### Klaar?
+
 - Commit je wijzigingen
 - Push alles naar Github
 
-**Als iedereen nog even de schouders er onder zet hebben we aan het einde van de les een website met overzicht van al jullie werk!**
+---
+
+**Als iedereen de pagina af heeft en naar Github gepushed, wordt een overzichtspagina gegenereerd met een script**
