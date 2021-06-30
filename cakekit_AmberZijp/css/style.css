@@ -2,7 +2,8 @@ body {
     background-color: #282828;
     color: #fff;
     font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
+    line-height: 1.5em;
 }
 
 h1, h2, h3, h4,h5, h6 {
@@ -19,6 +20,17 @@ img {
     max-width: 50%;
     height: auto;
     border-radius: 10pt;
+    margin-left: 18px;
+}
+
+#foto{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
 }
 
 #main {
@@ -32,6 +44,8 @@ a{
     font-weight: 500;
     text-decoration: none;
     border-radius: 5px;
+    width: 100px;
+    margin-top: 18px;
 }
 
 @media all and (min-width: 600px){
