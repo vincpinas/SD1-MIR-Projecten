@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="page-view">
+
+        <div id="header">
+            <h1>Top Trends</h1>
+            <div id="wave"></div>
+        </div>
+
+        
+
+            <div id="image-left">
+                <h3>slider</h3>
+                <div class="display-container">
+                    <img class="mySlides" src="img/cartTT.JPG">
+                    <img class="mySlides" src="img/shopTT.JPG">
+                    <img class="mySlides" src="img/sliderTT.JPG">
+                    <img class="mySlides" src="img/TT-screenshot.JPG">
+                  
+                    <div id="buttons">
+                        <button class="display-left" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="display-right" onclick="plusDivs(1)">&#10095;</button>
+                    </div>
+                  </div>
+            </div>
+            <div id="html-right">
+                <div class="html-content">
+                    <div id="html-doelgroep">
+                        <p>
+                            Ik heb als doelgroep jongeren op basis- en middelbare scholen.
+                            <br>
+                            Ik heb gewerkt met wordpress, custom css, plugins en een beetje php.
+                            <br>
+                            Als feedback kon ik de linkjes in header beter aanpassen en foto's beter rezisen voor op mobile
+                        </p>
+                       
+
+                    </div>
+                        <button class="TT-button"><a href="http://31761.hosts1.ma-cloud.nl/wordpress/"></a>Continue</button>
+                </div>
+            </div>
+            <div id="footer">
+                footer
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+
+</body>
+</html>
