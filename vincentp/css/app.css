@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+*, *::before, *::after {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+:root {
+    color: rgb(190, 190, 190);
+    --linkcolor: rgb(74, 131, 255);
+    --background: rgb(11, 11, 11);
+    --lightwhite: rgb(255, 255, 255);
+    --hovercolor: rgb(255, 178, 34);
+    --lightborder: rgb(234, 234, 234);
+    --darkerborder: rgb(224, 224, 224);
+    --lightgray: rgb(173, 173, 173);
+}
+
+a, button, input[type="submit"] {
+    text-decoration: none;
+    color: var(--linkcolor);
+}
+
+body, html, #root {
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: var(--background);
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CSS Reset */
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: ''; content: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+
+h1 {
+    margin: 20px 20px 0px 20px;
+    font-size: 2em;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin: 10px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Screenshots {
+    display: flex;
+    justify-content: start;
+    max-width: 100%;
+    transition: all 0.9s;
+}
+
+#Screenshots img {
+    margin: 2px;
+    width: 50%;
+}
+
+#heroimg {
+    width: 60%;
+    margin: 20px;
+}
+
+.blast-text {
+    transition: .2s;
+    display:inline-block;
+    font-weight: 600;
+}
+
+.blast-text:hover {
+    color: #6961ff;
+}
+
+@keyframes rubberBand{
+    0%{
+        transform: scale3d(1,1,1);
+    }
+    35%{
+        transform: scale3d(1.25,.75,1);
+    }
+    45%{
+        transform: scale3d(.75,1,1);
+    }
+    60%{
+        transform: scale3d(1.2,.8,1);
+    }
+    75%{
+        transform: scale3d(1.05,.95,1);
+    }
+    100%{
+        transform: scale3d(1,1,1); 
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #Screenshots img {
+        width: 100%;
+    }
+}
