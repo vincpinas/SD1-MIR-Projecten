@@ -1,11 +1,11 @@
 body {
-    background-color: cadetblue;
+   
     color: #fff;
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4,h5, h6 {
-    font-family: 'Patrick Hand', Arial, Helvetica, sans-serif;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
 }
 
 h1 {
@@ -17,9 +17,153 @@ img {
     height: auto;
 }
 
+a{
+    text-decoration: underline;
+    color: white;
+}
+
+
+
 #main {
     margin: 20px 10px;
 }
+
+#menu-bar {
+    height: 300px;
+  }
+  
+  #nav-layout {
+    width: 130px;
+    height: 130px;
+  
+    margin: 18px;
+  }
+  
+  #links {
+    font-size: 45px;
+  }
+  
+  #links li a {
+    color: white;
+  }
+  
+  #menu {
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+  }
+  
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: #373c56;
+    display: block;
+    border-radius: 9px;
+  }
+  
+  #bar1 {
+    transform: translateY(-4px);
+  }
+  
+  #bar3 {
+    transform: translateY(4px);
+  }
+  
+  .change .bar {
+    background-color: #000000;
+  }
+  
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+  
+  .change #bar3 {
+    transform: translateY(-6px) rotate(45deg);
+  }
+  
+  .change #bar2 {
+    opacity: 0;
+  }
+  
+  .nav a {
+    list-style: none;
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 22px;
+  }
+  
+  .nav li a:hover {
+    font-weight: bold;
+  }
+  
+  .nav li {
+    list-style: none;
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  #logo-nav {
+    transform: translateY(-200px);
+  }
+  
+  .nav {
+    padding: 0 20px;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    transition: 0.3s ease;
+    background-color: #323377;
+    transform: translateY(-1000px);
+    z-index: 1;
+    position: fixed;
+    margin-top: 72px;
+  }
+  
+  .change {
+    display: block;
+    transform: translateY(0px);
+  }
+  
+  #CTAButtonNav {
+    display: block;
+    height: 72px;
+  
+    width: 100%;
+  }
+  
+  #buttonContainer {
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+
+  #background {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  #background img {
+    max-width: 500%;
+    height: auto;
+    position: fixed;
+    z-index: -99;
+  
+    transform: rotate(80deg);
+  }
 
 @media all and (min-width: 600px){
     #main {
@@ -32,5 +176,87 @@ img {
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
     }
+    .nav {
+        transform: translateY(-30px);
+        display: flex;
+        gap: 20px;
+        height: 90px;
+        justify-content: space-between;
+        padding: 0;
+        border-radius: 6px;
+        box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        color: none;
+        box-shadow: none;
+        position: relative;
+        top: 0;
+      }
+    
+      .nav li {
+        display: flex;
+        margin-left: 36px;
+      }
+    
+      #menu {
+        transform: translateY(-500px);
+        margin: 0;
+      }
+    
+      #buttonContainer a {
+        padding: 9px;
+        width: 190px;
+        margin: 0;
+        background-color: #c9556f;
+      }
+    
+      #links{
+        display: flex;
+        justify-content: space-between;
+        padding: 9px;
+      }
+    
+      #links:first-child {
+        color: #23226b;
+        padding-bottom: 9px;
+        font-size: 30px;
+      }
+    
+      #first {
+        color: #323377 !important;
+      }
+    
+      #second {
+        color: #414584 !important;
+      }
+    
+      #third {
+        color: #505690 !important;
+      }
+    
+      #fourth {
+        color: #6e79a9 !important;
+      }
+    
+      #fifth {
+        color: #7d8ab5 !important;
+      }
+    
+      .nav div {
+        display: flex;
+    
+        width: 100%;
+        height: auto;
+        border-bottom: solid black 4px;
+      }
+    
+      #CTAButtonNav {
+        border-radius: 0 6px 6px 0;
+      }
+      #background img {
+        transform: rotate(0);
+        width: 140%;
+        transform: translateY(-400px);
+        overflow: hidden;
+      }
 }
 
