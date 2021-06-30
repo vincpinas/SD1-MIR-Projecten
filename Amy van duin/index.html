@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="css/landingspage.css">
+    <link rel="stylesheet" href="css/menuoverlay.css">
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="Javascript files/mobilenav.js"></script>
+</head>
+<body>
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+        <!-- Overlay Content -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <!-- END OVERLAY-->
+
+    <header id="wrapper">
+    <!-- NAVIGATION BAR -->
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">Amy's World</a>
+            </div>
+            <div class="hamburger">
+                <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776; <Menu></Menu></span>
+            </div>
+        </div>
+    <!-- END NAVIGATION BAR -->
+
+        <!-- BEGIN WRAPPER-->
+        <div class="wrapper-afbeelding">
+            <video autoplay muted loop id="myVideo">
+                <source src="Afbeeldingen/190915_B_02_HaLong_33.mp4" type="video/mp4">
+            </video>
+            <div class="wrapper-textcolumn">
+                <h1>Welkom<br> To <br>Sport 4 You</h1>
+            </div>
+            <div class="wrapper-button"> 
+                <a   href="#readmore">Read More</a>
+            </div>
+        </div>
+        <!-- END WRAPPER -->
+    </header>
+
+    <!-- READ MORE SECTION -->
+    <section id="readmore">
+        <div class="card">
+            <div class="cards cards1">
+                <a href="#about">About</a>
+            </div>
+            <div class="cards cards2">
+                <a href="#project">Project</a>
+            </div>
+            <div class="cards cards3">
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </section>
+    <!-- END READMORE SECTION -->
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        
+    </section>
+    <!-- END ABOUT SECTION -->
+</body>
+</html>
