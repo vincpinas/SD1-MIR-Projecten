@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <div class="alles">
+        <div class="titel">
+            <h1>Clip_n_Dip portfolio</h1>
+            <hr>
+            <h1></h1>
+        </div>
+        <div class="doelgroep"><br>
+            <h2>Doelgroep</h2><br>
+            <hr><br>
+            <h3>Wij focussen vooral op gamers, maakt niet uit welke leeftijd.<br> 
+                Je kan natuurlijk ook gewoon de website<br> bezoeken en genieten van de clips.</h3>
+        </div>
+        <div class="skills"><br>
+            <h2>Skills</h2><br>
+            <hr><br>
+            <h3>Wij hebben gebruikt gemaakt van verschillende tools.<br> Voor de front-end de standaard html en css.  En voor de upload functie hebben wij php gebruikt om te verbinden met de database</h3>
+        </div>
+        <div class="team"><br>
+            <h2>Teamleden</h2><br>
+            <hr>
+            <h3>Project eigenaren: 
+                <ul><br>
+                    <li>Thies</li>
+                    <li>Pawel</li>
+                    <li>Shi Hua</li>
+                </ul><br>
+            </h3>
+        </div>
+        <div class="feedback"><br>
+            <h2>Feedback</h2><br>
+            <hr>
+            <h3>De feedback dat wij hebben gekregen is: 
+                <ul><br>
+                    <li>Specifieker zijn over de thumbnail. <br>(dus of je een jpg, png enz moet gebruiken)</li>
+                </ul>
+            </h3>
+        </div>
+        <div class="github"><br>
+            <h2>Github</h2><br>
+            <hr><br>
+            <h3>Klik <a href="https://github.com/Shihua-liu/make-it-rain" target="__blank">hier</a> om naar onze repository te gaan van ons project</h3><br>
+        </div>
+
+        <div class="live"><br>
+            <h2>Live-links</h2><br>
+            <hr><br>
+            <h3>Klik <a href="http://31088.hosts1.ma-cloud.nl/make-it-rain/main.php#" target="__blank">hier</a> om naar onze live versie van clip_n_dip te gaan</h3><br>
+        </div>
+
+
+
+        <div class="foto-container">
+            <div class="fotoslider">
+                <div class="slide">
+                    <img src="image/Homescreen.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="image/Overons.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="image/upload.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="image/Wireframehome.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="image/Wireframevideo.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+   
+<script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+        var slides = document.getElementsByClassName("slide");
+        for (var x = 0; x < slides.length; x++) {
+            slides[x].style.opacity = 0;
+        }
+
+        var id = 0;
+        slides[id].style.opacity = 1;
+
+        setInterval(() => {
+            slides[id].style.opacity = 0;
+            id = (id + 1) % slides.length;
+            slides[id].style.opacity = 1;
+        }, 5000);
+    });
+
+</script>    
+</body>
+</html>
