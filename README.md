@@ -6,12 +6,14 @@ In deze repository gaan we samenwerken aan een totaaloverzicht van alle Make it 
 
 Elk team of project maakt een HTML pagina (of meerdere pagina's) waarmee je het project presenteert.
 
-1. Clone eerst deze repository naar je computer.
-2. Maak voor het project een nieuwe folder aan met een korte naam
-3. Je werkt alleen in die folder
-4. Maak een `index.html` OF `index.php` aan (als je PHP wilt gebruiken)
-5. Schrijf de code voor de pagina. Je mag subfolders maken voor afbeeldingen, css etc. 
-6. Bekijk de map `voorbeeld` om een voorbeeld te zien ;-)
+1. **Fork* eerst deze repository (klik rechtsboven op Fork)
+2. Je krijgt nu een nieuwe repository in je eigen account
+3. **Clone** deze **nieuwe** repository naar je computer
+4. Maak een nieuwe folder voor jullie project met een korte naam (geen spaties)
+5. Je werkt alleen in de folder die je in stap 4 hebt gemaakt.
+6. Maak in de folder een  `index.html` 
+7. Schrijf de HTML voor de pagina. Je mag subfolders maken voor afbeeldingen, css etc. 
+8. Bekijk de map `voorbeeld` om een voorbeeld te zien ;-)
 
 ### Belangrijk
 
@@ -19,6 +21,7 @@ Elk team of project maakt een HTML pagina (of meerdere pagina's) waarmee je het 
 - Zet in de folder een afbeelding met de naam `thumb.jpg` en de afmeting: 400x300 pixels.
 
 ### Code & skills
+
 Laat zien en gebruik wat je hebt geleerd in de afgelopen periodes.
 
 - CSS Grid
