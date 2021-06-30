@@ -1,0 +1,44 @@
+body {
+    background-color: #282828;
+    color: #fff;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4,h5, h6 {
+    font-family: 'Iceberg';
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 36px;
+    color: #C0738F;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10pt;
+}
+
+#main {
+    margin: 20px 10px;
+}
+a{
+    background: #F9F3F5;
+    padding: 15px 35px;
+    color: #C0738F;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+@media all and (min-width: 600px){
+    #main {
+        width: 1000px;
+        margin: 40px auto;
+    }
+
+}
+
