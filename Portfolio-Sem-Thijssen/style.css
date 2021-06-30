@@ -40,30 +40,6 @@
         color: white;
     }
     
-    .flexbox_container {
-        text-align: center;
-        border: 5px solid white;
-        color: white;
-    }
-    
-    .flexbox_item1 {
-        background-image: url("homepage.png")
-    }
-    
-    ;
-    .flexbox_item2 {
-        background-image: url("Een_van_de_decennia.png");
-    }
-    
-    .flexbox_item3 {
-        background-image: url("About_us.png");
-    }
-    
-    .img {
-        width: 200px;
-        height: 120px;
-    }
-    
     body {
         background-color: black;
     }
