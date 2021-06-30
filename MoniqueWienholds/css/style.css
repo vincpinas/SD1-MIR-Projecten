@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(226, 120, 21);
+    color: #fff;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4,h5, h6 {
+    font-family: 'Patrick Hand', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+img {
+    max-width: 75%;
+    height: auto;
+}
+
+#main {
+    margin: 20px 10px;
+}
+
+@media all and (min-width: 600px){
+    #main {
+        width: 1000px;
+        margin: 40px auto;
+    }
+
+    #team {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
+
