@@ -1,0 +1,170 @@
+/*imports*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+/* Normal settings*/
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color:#242323 ;
+  color: white;
+  font-family:Arial, Helvetica, sans-serif;
+  height:100%;
+}
+
+/*Navigation*/
+.navbar{
+  width: 100%;
+  background-color:#424141;
+  overflow: auto;
+  position: static; 
+}
+.navbar a{
+  float:left;
+  align-items: center;
+  padding: 12px;
+  color:white;
+  text-decoration:none;
+  font-size: 20px;
+  padding-left:45px;
+  font-family: 'Redressed', cursive;
+}
+.hamburger{
+  float:right;
+  padding-right: 45px;
+  align-items:center;
+}
+
+/* INSTELLING IPHONE*/
+@media screen and (min-width: 300px){
+  .navbar{
+    width: 100%;
+    background-color:#424141;
+    overflow: auto;
+    position: static; 
+  }
+  .navbar a{
+    float:left;
+    align-items: center;
+    padding: 12px;
+    color:white;
+    text-decoration:none;
+    font-size: 20px;
+    padding-left:45px;
+  }
+  .hamburger{
+    float:right;
+    padding-right: 45px;
+    align-items:center;
+  }
+  /* WRAPPER*/
+  #wrapper{
+    width: 100%;
+    height:auto;
+  }
+  .wrapper-afbeelding video{
+    width: 100%;
+    height: auto;
+    opacity: 90%;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .wrapper-textcolumn h1{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10px;
+    text-align:center;
+    display:block;
+    float:center;
+    text-align: center;
+  }
+  .wrapper-button a{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    background-color:rgb(117, 115, 115);
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding: 12px 28px;
+  }
+  
+}
+/* Einde Instellingen Phone*/
+
+/* WRAPPER*/
+#wrapper{
+  width: 100%;
+  height:auto;
+}
+.wrapper-afbeelding video{
+  width: 100%;
+  height: auto;
+  opacity: 90%;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.wrapper-textcolumn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.4); /* Black background with 0.5 opacity */
+  padding: 50px;
+}
+.wrapper-textcolumn h1{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 50px;
+  text-align:center;
+  display:block;
+  float:center;
+  text-align: center;
+}
+.wrapper-button a{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  background-color:rgb(117, 115, 115);
+  color:rgb(255, 255, 255);
+  font-size: 20px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border-radius: 15px;
+  padding: 12px 28px;
+}
+/* END WRAPPER */
+
+/* READ MORE SECTION */
+#readmore{
+  margin: 40px;
+}
+.card{
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 250px 250px 250px ;
+  grid-column-gap: 100px;
+  
+}
+
+.card > div {
+  background-color: #353535;
+  padding: 5px 10px;
+  color: white;
+  /*border: 3px solid black;*/
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+.cards a{
+  color:white;
+  
+}
+
+
+/* END READMORE SECTION*/
