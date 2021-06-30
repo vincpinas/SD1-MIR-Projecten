@@ -6,7 +6,7 @@ In deze repository gaan we samenwerken aan een totaaloverzicht van alle Make it 
 
 Elk team of project maakt een HTML pagina (of meerdere pagina's) waarmee je het project presenteert.
 
-1. **Fork* eerst deze repository (klik rechtsboven op Fork)
+1. **Fork** eerst deze repository (klik rechtsboven op Fork)
 2. Je krijgt nu een nieuwe repository in je eigen account
 3. **Clone** deze **nieuwe** repository naar je computer
 4. Maak een nieuwe folder voor jullie project met een korte naam (geen spaties)
