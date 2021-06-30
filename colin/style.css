@@ -1,0 +1,134 @@
+#page-view {
+    margin: none;
+    transition: all 500ms ease-in;
+    height: 150vh; 
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(9);
+    grid-gap: none;
+    grid-template-areas: "header     header     header     header"
+                         "header     header     header     header"
+                         "header     header     header     header"
+                         "header     header     header     header"
+                         "header     header     header     header"
+                         "image-left image-left image-left image-left"
+                         "html-right html-right html-right html-right"
+                         "html-right html-right html-right html-right"
+                         "html-right html-right html-right html-right"
+                         "html-right html-right html-right html-right"
+                         "footer     footer     footer     footer"
+                         "footer     footer     footer     footer"
+                         "footer     footer     footer     footer";
+}
+
+body{
+    background-color: rgb(73, 73, 73);
+}
+
+#header{
+    grid-area: header;
+    background-image: url(img/productTT.JPG);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 80px;
+    text-decoration: underline orange 5px;
+    color: black;
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.display-container{
+    position: relative;
+    display: inline-block;
+}
+
+#buttons{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+}
+
+#image-left{
+    grid-area: image-left;
+    background-color: azure;
+}
+
+#html-right{
+    grid-area: html-right;
+    background-color: azure;
+}
+
+.TT-button{
+    background-color: orange;
+    width: 180px;
+    height: 50px;
+    text-decoration: none;
+    color: azure;
+    border: azure 2px solid;
+    border-radius: 25px;
+}
+
+#footer{
+    grid-area: footer;
+    background-color: orange;
+}
+
+/* #wave {
+    position: relative;
+    height: 70px;
+    width: 100%;
+    background: #e0efe3;
+  }
+  #wave:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 350px;
+    height: 80px;
+    background-color: white;
+    right: -5px;
+    top: 40px;
+  }
+  #wave:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 320px;
+    height: 70px;
+    background-color: #e0efe3;
+    left: 0;
+    top: 27px; 
+  } */
+
+@media screen and (max-width: 600px) {
+    #page-view {
+        margin: none;
+        transition: all 500ms ease-in;
+        height: 110vh; 
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(9);
+        grid-gap: none;
+        grid-template-areas: "header     header     header      header"
+                             "header     header     header      header"
+                             "html-right html-right html-right  html-right"
+                             "html-right html-right html-right  html-right"
+                             "footer     footer     footer      footer";
+    }
+    
+  }
