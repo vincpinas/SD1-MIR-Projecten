@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html, body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.introduction{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 500px;
+    background-color: rgb(207, 206, 186);
+    padding-top: 40px
+  }
+  .introduction h1{
+    grid-column: 2;
+    justify-content: center;
+    display: flex;
+  }
+  .introduction p{
+    grid-column: 2;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .section{
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 100px;
+    padding: 50px;
+  }
+
+  .section img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      max-width: 200px;
+      height: auto;
+  }
+  .introduction img{
+    max-width: 300px;
+    grid-column: 3;
+  }
+  .us{
+    padding-top: 60px;
+    text-align: center;
+    color: black;
+    padding-bottom: 60px;
+  }
+  .personel{
+    min-height: 500px;
+    padding-top: 30px;
+    align-content: center;
+    background-color: #CFCEBA;
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    
+  }
+  .personel .p1{
+    grid-column: 1;
+    text-align: center;
+  }
+  .personel .p2{
+    grid-column: 2;
+    text-align: center;
+  }
+  .personel img{
+    max-width: 200px;
+  }
+
+  .foto-con{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "een twee"
+                           "drie vier";
+
+      grid-gap: 10px;
+  }
+
+  .foto1{
+      grid-column: 1;
+      grid-row: 1;
+      grid-area: een;
+  }
+
+  .foto2{
+      grid-column: 2;
+      grid-row: 1;
+      grid-area: twee;
+  }
+  @media (max-width: 1500px){
+      .section{
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+      }
+
+      .text1{
+          grid-row: 1;
+      }
+
+      .text2{
+        grid-row: 2;
+    }
+
+    .text3{
+        grid-row: 3;
+    }
+
+    .foto-con{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "een" 
+                           "twee"
+                           "drie" 
+                           "vier";
+    }
+
+    .foto-con img{
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .foto1{      
+      max-height: auto;
+      max-width: 100%;
+    }
+
+    .foto2{      
+      max-height: auto;
+      max-width: 100%;
+    }
+
+    .foto3{      
+      max-height: auto;
+      max-width: 100%;
+    }
+
+    .foto4{      
+      max-height: auto;
+      max-width: 100%;
+    }
+
+  }
+  
+
+  @media (max-width: 700px){
+    .introduction{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .introduction h1{
+        grid-column: 1;
+    }
+    .introduction p{
+        grid-column: 1;
+    }
+
+    .personel{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .introduction img{
+        max-width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        grid-column: 2;
+      }
+    .personel .p1{
+        grid-column: 1;
+        grid-row: 1;
+        text-align: center;
+    }
+    .personel .p2{
+        grid-column: 1;
+        grid-row: 2;
+        text-align: center;
+    }
+
+  }

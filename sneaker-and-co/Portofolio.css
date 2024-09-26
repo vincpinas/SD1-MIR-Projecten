@@ -1,0 +1,77 @@
+@media screen and (min-width: 600px) {
+
+    body {
+    background-color: aqua;
+}
+}
+@media screen and (max-width: 599px) {
+
+    body {
+    background-color: rgb(255, 0, 0);
+}
+}
+
+#dashboard {
+    display: grid;
+    /* font-family: 'Monoton', cursive; */
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas: "header    header" 
+                         "controls  weather" 
+                         "controls  weather"
+                         "graph     graph";
+}
+
+.item {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 5px;
+}
+
+.header {
+    background-color: rgb(233, 179, 79);
+    grid-area: header;
+    padding-top: 10px;
+    text-align: center;
+    border: 5px solid rgb(4, 56, 52);
+}
+
+.weather {
+    grid-area: weather;
+    text-align: center;
+    border: 5px solid rgb(4, 56, 52);
+    border-radius: 25px;
+    background-color: rgb(233, 179, 79);
+}
+
+.graph {
+    grid-area: graph;
+    padding-bottom: 150px;
+    text-align: center;
+    border: 5px solid rgb(4, 56, 52);
+    border-radius: 25px;
+    background-color: rgb(233, 179, 79);
+}
+
+.controls {
+    grid-area: controls;
+    padding-bottom: 150px;
+    text-align: center;
+    border: 5px solid rgb(4, 56, 52);
+    border-radius: 25px;
+    background-color: rgb(233, 179, 79);
+} 
+
+@media screen and (min-width: 600px) {
+
+    #dashboard {
+        background-color: aqua;
+        grid-template-columns: 200px 1fr 1fr 200px;
+        grid-template-areas: "header    header    header    header" 
+                             "controls  controls  controls  weather"                    
+                             "controls  controls  controls  weather" 
+                             "graph     graph     graph     graph"; 
+                             
+                             
+    }
+}

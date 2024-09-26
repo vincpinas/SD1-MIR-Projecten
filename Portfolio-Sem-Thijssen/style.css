@@ -1,0 +1,45 @@
+    div.a {
+        text-align: center;
+        border: 5px solid white;
+        color: white;
+    }
+    
+    div.b {
+        text-align: center;
+        border: 5px solid white;
+        color: white;
+        margin-right: 50%;
+    }
+    
+    div.c {
+        text-align: center;
+        border: 5px solid white;
+        color: white;
+        margin-left: 50%;
+        margin-top: -124px;
+    }
+    
+    div.d {
+        text-align: center;
+        border: 5px solid white;
+        color: white;
+        width: 32.62%;
+        float: left;
+        height: 150px;
+    }
+    
+    div.e {
+        text-align: center;
+        border: 5px solid white;
+        color: white;
+    }
+    
+    div.f {
+        text-align: center;
+        border: 5px solid white;
+        color: white;
+    }
+    
+    body {
+        background-color: black;
+    }
